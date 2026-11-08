@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Centria Edu | Basics of Web Development</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="top-strip" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Centria Edu home">
+      Shahrooz - centria <span>edu</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a> 
+      <a  class="active" href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+<main>
+
+  <section class="topics" id="contact">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">GET IN TOUCH</span>
+       
+      </div>
+
+      <form class="card contact-form"
+            action="https://httpbin.org/post"
+            method="post">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number (Optional)</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            autocomplete="tel">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Contact Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="">Choose a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Technical Support</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Preferred Contact Method</legend>
+
+          <label>
+            <input
+              type="radio"
+              name="contact_method"
+              value="email"
+              required>
+            Email
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="contact_method"
+              value="phone">
+            Phone
+          </label>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message here..."
+            required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+</main> 
+  
+  </body>
+  </html>

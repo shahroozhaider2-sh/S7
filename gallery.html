@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Centria Edu</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="top-strip" aria-hidden="true"></div>
+
+ <header class="site-header">
+    <a class="brand" href="#" aria-label="Centria Edu home">Shahrooz - centria <span>edu</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">S6 · Image experiments</p>
+      <h1>Different ways to see a photograph.</h1>
+      <p class="intro-copy">This gallery explores three ways to present images with CSS: a softly faded background, a grayscale photograph, and an image that opens at its original size.</p>
+    </section>
+
+    <section class="photo-gallery" aria-label="Image effects gallery">
+      <article class="photo-card background-photo">
+        <div class="card-copy">
+          <p class="card-number">01 / Background image</p>
+          <h2>A photograph behind the story</h2>
+          <p>The first gallery photograph fills this card. A dark transparent overlay softens the image while keeping the heading and description clear.</p>
+        </div>
+      </article>
+
+      <article class="photo-card">
+        <div class="image-frame">
+          <img class="grayscale-image" src="image/2.jpeg" alt="Second photograph in the gallery, displayed in black and white">
+        </div>
+        <div class="card-copy">
+          <p class="card-number">02 / Grayscale</p>
+          <h2>Less colour, more contrast</h2>
+          <p>The second photograph remains an image element. The CSS grayscale filter removes its colour, and the image scales to fit the card.</p>
+        </div>
+      </article>
+
+      <article class="photo-card">
+        <a class="clickable-image" href="image/3.jpeg" target="_blank" rel="noopener" aria-label="Open the third gallery photograph at full size in a new tab">
+          <div class="image-frame">
+            <img src="image/3.jpeg" alt="Third photograph in the gallery; select it to open the original image">
+          </div>
+        </a>
+        <div class="card-copy">
+          <p class="card-number">03 / Click to open</p>
+          <h2>See the original image</h2>
+          <p>Select the photograph to open the original image file in a separate browser tab.</p>
+          <span class="click-hint">Click image to view full size ↗</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="index.html">centria <span>edu</span></a>
+    <p>Basics of Web Development · S6 Gallery</p>
+  </footer>
+</body>
+</html>
